@@ -5,11 +5,13 @@ import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { ContactPage } from './pages/ContactPage';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <main>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path="/about" element={<Outlet />}>
@@ -18,6 +20,8 @@ function App() {
           </Route>
           <Route path='projects' element={<ProjectsPage />} />
         </Routes>
+        </main>
+        <Footer />
       
     </div>
   );
