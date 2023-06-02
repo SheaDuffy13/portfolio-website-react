@@ -63,3 +63,27 @@ body {
   /* left: 50%; */
   transform: translateX(-50%);
  }
+
+
+ /* ---HOME PAGE--- */
+ .home-hero-img{
+  width: 300px;
+  margin: 20px;
+  border-radius: 20%;
+ }
+
+
+ /* ---ABOUT ME PAGE--- */
+
+ .AboutMe-page {
+  font-family: monospace, 'Arial Narrow', Arial, sans-serif;
+ }
+
+ .AboutMe-blurb {
+  font-size: calc(10px + 1.3vmin);
+  margin: 5vw 20vw 0vw 20vw;
+ }
+
+ .AboutMe-title {
+  margin: 10vw 0vw 0vw 0vw;
+ }
