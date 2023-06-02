@@ -109,6 +109,10 @@ body {
   margin: 0 auto;
 }
 
+.email-title {
+  margin-top: 10vh;
+}
+
 form label {
   display: block;
   margin-top: 20px;
@@ -132,6 +136,12 @@ form button {
   display: inline-block;
   font-size: 1.5vh;
   cursor: pointer;
+}
+
+.confirmation-msg {
+  margin-top: 3vh;
+  opacity: 60%;
+  font-size: calc(10px + 1.2vmin);
 }
 
 

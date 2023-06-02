@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 export function ContactPage() {
+    const [confirmationMessage, setConfirmationMessage] = useState('');
+                // dev
+    // const [confirmationMessage, setConfirmationMessage] = useState('Your message has been sent successfully!');
 
     const handleSubmit = (event) => {
       event.preventDefault();
@@ -8,16 +12,18 @@ export function ContactPage() {
         emailjs.sendForm('service_hnu743m', 'template_28amgik', event.target, 'GZsC3Vb34Y5LFogOV')
         .then((result) => {
             console.log(result.text);
-            alert('Your message has been sent successfully!');
+            // alert('Your message has been sent successfully!');
+            setConfirmationMessage('Your message has been sent successfully!');
         }, (error) => {
             console.log(error.text);
-            alert('Something went wrong');
+            // alert('Something went wrong');
+            setConfirmationMessage('Something went wrong');
         });
     };
   
     return (
       <div>
-        <h1>Email Me</h1>
+        <h1 className='email-title'>Email Me</h1>
         <form onSubmit={handleSubmit}>
         <input type="text" id="name" name="from_name" placeholder="Name" required />
 
@@ -29,6 +35,9 @@ export function ContactPage() {
 
         <button type="submit">Send</button>
       </form>
+      {confirmationMessage && <p className='confirmation-msg'>{confirmationMessage}</p>}
+                {/* dev  */}
+      {/* <p className='confirmation-msg'>{confirmationMessage}</p> */}
       </div>
     );
   }
