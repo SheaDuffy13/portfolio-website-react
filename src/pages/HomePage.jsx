@@ -6,7 +6,7 @@ export function HomePage() {
         <div>
             <h1>Shea Duffy</h1>
             <p>Web Dev</p>
-            <img className='home-hero-img' src={hero} />
+            <img className='home-hero-img' src={hero} alt='' />
             {/* <img src={require('../images/hero.jpg')} /> */}
             <p>Skills in:</p>
         </div>
