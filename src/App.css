@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 
@@ -19,17 +19,17 @@ body {
   --tw-bg-opacity: 1; */
 }
 
-.App {
+.GradientBg {
   /* Gradient BG */
   height: fit-content;
   z-index: 3;
   width: 100%;
   max-width: 640px;
-  background-image: radial-gradient(
+  background-image: /*radial-gradient(
           at 27% 37%,
           hsla(215, 98%, 61%, 1) 0px,
           transparent 0%
-      ),
+      ),*/
       radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
       radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
       radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
@@ -44,3 +44,22 @@ body {
   top: 80px;
   opacity: 0.1;
 }
+
+.to-contact-page-btn {
+  background-color: #111; /*or #181b1d */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  /* fixes button to bottom of screen */
+  position: fixed;
+  bottom: 0;
+  /* left: 50%; */
+  transform: translateX(-50%);
+ }
