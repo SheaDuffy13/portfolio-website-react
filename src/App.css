@@ -100,6 +100,41 @@ body {
  }
 
 
+ /* CONTACT ME PAGE */
+ form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+form button {
+  background-color: #111111a2; /*or #181b1d */
+  border: none;
+  color: white;
+  padding: 13px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5vh;
+  cursor: pointer;
+}
+
+
  /* ---PROJECT PAGE--- */
 
 .project-list {
