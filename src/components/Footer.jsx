@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-export function Footer() {
+export function Footer({ showSocialLinks }) {
     return (
       <footer>
-        <div className='social-media-links-footer'>
+        {showSocialLinks && (
+        <div className='social-media-links'>
           <a href="https://github.com/SheaDuffy13" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -12,7 +13,8 @@ export function Footer() {
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>
-        <p>Copyright © 2023</p>
+        )}
+        <p>© Shea Duffy 2023</p>
       </footer>
     );
   }

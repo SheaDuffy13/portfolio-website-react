@@ -54,12 +54,34 @@ body {
 
 
  /* ---HOME PAGE--- */
+ .homePage-div {
+  display:flex;
+  /* display:inline-flex; */
+  justify-content:space-around;
+  align-items: center;
+  margin-top: 10vh;
+ }
+
  .home-hero-img{
   width: 300px;
-  margin: 20px;
+  margin: 20px 0 0 0;
   border-radius: 20%;
  }
 
+ .homePage-div button {
+  padding: 15px 30px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafbd3;
+  color: #282c34;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+ }
+ .homePage-div button:hover {
+  opacity: 70%;
+}
 
  /* ---ABOUT ME PAGE--- */
 
@@ -74,6 +96,10 @@ body {
 
  .AboutMe-title {
   margin: 10vw 0vw 0vw 0vw;
+ }
+
+ .aboutMe-resume-div {
+  margin: 0 0 5vw 0;
  }
 
  .to-contact-page-btn {
@@ -97,6 +123,14 @@ body {
   /* top: 50%; */
   right: 0;
   transform: translateY(-50%);
+ }
+
+ .AboutPage-resume-link {
+  color: #61dafb;
+  font-size: 30px;
+ }
+ .AboutPage-resume-link:hover {
+  opacity: 50%;
  }
 
 
@@ -166,25 +200,29 @@ form button {
  }
 
  .project-entry img {
-  width: 40vw;
+  width: 30vw;
  }
 
 
  /* ---FOOTER--- */
 
-.social-media-links-footer {
+.social-media-links {
   display: flex;
   justify-content:center;
-  font-size: 2.4vh;
+  font-size: 3vh;
+  /* background-color: #11111121; */
 }
 
-.social-media-links-footer a {
+.social-media-links a {
   color:#61dafb;
   margin: 10px;
 }
+.social-media-links a:hover {
+  opacity: 0.5;
+}
 
 footer p {
-  font-size: 1.3vh;
+  font-size: 1.7vh;
   opacity: 40%;
   color: #61dafb;
   padding: 0.3rem;

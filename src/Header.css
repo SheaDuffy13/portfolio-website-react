@@ -1,0 +1,66 @@
+
+.NavBar {
+  /* dark bar */
+    background-color: #181b1d;
+    /* background-image: url(./images/stars.jpg); */
+    /* background-size: cover; */
+    /* background-position: left; */
+    /* background-blend-mode: color-dodge; */
+    /* overflow: hidden; */
+    /* or */
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .NavBar ul {
+    list-style-type: none;
+    margin: 0 50px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+  
+  .NavBar li {
+    float: left;
+  }
+  
+  .NavBar a {
+    display: block;
+    color: #61dafb;
+    /* text-align: center; */
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .NavBar ul a:hover {
+    background-color: #111;
+  }
+
+  .header-logo {
+    width: 80px;
+    height: auto;
+    margin: 0 0 0 30px;
+    opacity: 70%;
+  }
+  .header-logo:hover {
+    opacity: 0.5;
+  }
+  
+  .header-name-div {
+    /* background-color: #181b1d; */
+    /* background-image: url(./images/stars.jpg); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-blend-mode:color-dodge; */
+    width: 100vw;
+    margin: 5px;
+    padding-bottom: 8px;
+  }
+
+  .header-name-div p {
+    /* background-color: #1f304889; */
+  }

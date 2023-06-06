@@ -1,4 +1,4 @@
-import projectImg from '../images/project-img.jpg'
+import projectImg from '../images/leaves.jpg'
 
 export function ProjectsPage() {
 

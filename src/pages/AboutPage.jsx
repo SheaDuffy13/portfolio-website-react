@@ -1,5 +1,7 @@
 // import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 export function AboutPage() {
     const navigate = useNavigate();
@@ -21,7 +23,12 @@ export function AboutPage() {
             <button className="to-contact-page-btn" onClick={handleButtonClick}>
                 Contact
             </button>
-            
+            <div className="aboutMe-resume-div">
+                <p>Resume: </p>
+                <a className="AboutPage-resume-link" href="<URL>" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faFilePdf} />
+                </a>
+            </div>
         </div>
     )
 }
