@@ -26,7 +26,7 @@ export function ContactPage() {
     return (
       <div>
         <div className='contactPage-email-div'>
-          <h2 className='email-title'>Email Me</h2>
+          <h2 className='email-title'>Email</h2>
           <form onSubmit={handleSubmit}>
             <input type="text" id="name" name="from_name" placeholder="Your Name" required />
 
@@ -44,7 +44,7 @@ export function ContactPage() {
         </div>
 
         <div className='contactPage-socials-div'>
-          <h3 className='contactPage-socials-title'>Connect on social media:</h3>
+          <h3 className='contactPage-socials-title'>Social Media:</h3>
           <p>GitHub:</p>
           <a href="https://github.com/SheaDuffy13" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />

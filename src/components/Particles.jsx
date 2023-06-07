@@ -39,7 +39,7 @@ function ParticleCanvas() {
 
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, 2 * Math.PI);
-        ctx.fillStyle = 'lightblue';  // particle colour
+        ctx.fillStyle = '#61dafb';  // particle colour
         ctx.shadowColor = 'pink';
         // glow effect
         ctx.shadowBlur = 10;

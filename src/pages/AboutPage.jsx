@@ -1,7 +1,8 @@
 // import React from "react";
 import { useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+// import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import hero from '../images/hero.jpg'
+
 
 export function AboutPage() {
     const navigate = useNavigate();
@@ -12,29 +13,45 @@ export function AboutPage() {
 
     return(
         <div className="AboutMe-page">
-            <h1 className="AboutMe-title">About Me</h1>
-            <p className="AboutMe-blurb">
-                Hi, I'm Shea! I'm a web development student at Coder Academy with a passion for all things tech. 
-                When I'm not coding, you can find me playing Magic: The Gathering, video games, reading, or drinking copious amounts of tea. 
-                I've always been interested in computers and technology and have previously studied game development in 2013. 
-                Currently, I work in retail but am excited to transition into the tech industry and apply my skills to build amazing web experiences.
-            </p>
-            <p>
-            C#, Python, HTML/CSS, JavaScript
-            </p>
-            <p>
-            Express, MongoDB, MySQL, React
-            </p>
-            
-            <button className="to-contact-page-btn" onClick={handleButtonClick}>
-                Contact
-            </button>
-            <div className="aboutMe-resume-div">
-                <p>Resume: </p>
-                <a className="AboutPage-resume-link" href="<URL>" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faFilePdf} />
-                </a>
+            <div className="AboutMe-content">
+
+                <div className="AboutMe-hero-div">
+                    <img className='AboutMe-hero-img' src={hero} alt='' />
+                </div>
+
+                <div className="AboutMe-blurb-div">
+                    <h2 className="AboutMe-title">About Me</h2>
+                    <p className="AboutMe-blurb">
+                        Hi, I'm Shea! I'm a web development student at Coder Academy with a passion for all things tech. 
+                        I've always wanted to work in the IT industry and previously studied game development in 2013. 
+                        Currently, I work in retail but am excited to transition into the tech industry and apply my skills to build amazing web experiences.
+                    </p>
+
+                    <div className="aboutMe-blurb-btns-div">
+                    <button className="aboutMe-contact-btn" onClick={handleButtonClick}>
+                            Contact Me
+                        </button>
+                        <button className="aboutMe-resume-btn" onClick={handleButtonClick}>
+                            Resume
+                        </button>
+                    </div>
+                </div>
             </div>
+
+            {/* <div class="tech-stack">
+                <h3>Tech Stack</h3>
+                <ul>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                    <li>React</li>
+                </ul>
+            </div> */}
+
         </div>
     )
 }

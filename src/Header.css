@@ -1,17 +1,18 @@
 
 .NavBar {
   /* dark bar */
-    background-color: #181b1d;
-    /* background-image: url(./images/stars.jpg); */
+    background-color: #181b1d4e;
+    /* background-image: url(./images/leaves.jpg); */
     /* background-size: cover; */
     /* background-position: left; */
-    /* background-blend-mode: color-dodge; */
+    /* opacity: 30%; */
     /* overflow: hidden; */
     /* or */
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: #61dafb16 1px solid;
   }
   
   .NavBar ul {
