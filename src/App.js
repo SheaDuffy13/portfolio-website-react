@@ -10,6 +10,7 @@ import { Footer } from './components/Footer';
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const isContactPage = location.pathname === '/about/contact';
 
   return (
     <div className="App">
@@ -24,7 +25,7 @@ function App() {
           <Route path='projects' element={<ProjectsPage />} />
         </Routes>
         </main>
-        <Footer showSocialLinks={!isHomePage}/>
+        <Footer showSocialLinks={!isHomePage && !isContactPage}/>
       
     </div>
   );

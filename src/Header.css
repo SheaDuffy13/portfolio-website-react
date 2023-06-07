@@ -16,7 +16,7 @@
   
   .NavBar ul {
     list-style-type: none;
-    margin: 0 50px 0 0;
+    margin: 0 20px 0 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -27,11 +27,11 @@
     float: left;
   }
   
-  .NavBar a {
+  .NavBar li a {
     display: block;
     color: #61dafb;
     /* text-align: center; */
-    padding: 14px 16px;
+    padding: 14px 21px;
     text-decoration: none;
     font-size: 20px;
   }
@@ -43,7 +43,8 @@
   .header-logo {
     width: 80px;
     height: auto;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 10px;
+    padding: 0;
     opacity: 70%;
   }
   .header-logo:hover {
@@ -56,9 +57,9 @@
     /* background-size: cover; */
     /* background-position: center; */
     /* background-blend-mode:color-dodge; */
-    width: 100vw;
-    margin: 5px;
-    padding-bottom: 8px;
+    /* width: 100vw; */
+    /* margin: 5px; */
+    /* padding-bottom: 8px; */
   }
 
   .header-name-div p {

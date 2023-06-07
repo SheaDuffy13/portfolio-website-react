@@ -1,7 +1,10 @@
 import hero from '../images/hero.jpg'
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import ParticleCanvas from '../components/Particles';
+
 
 export function HomePage() {
     const navigate = useNavigate();
@@ -12,10 +15,11 @@ export function HomePage() {
 
     return(
         <div className='homePage-div'>
-            <div>
+            <div className='homePage-name-div'>
+                {/* <img className='home-hero-img' src={hero} alt='' /> */}
                 <h1>Shea Duffy</h1>
                 <p>Aspiring Web Developer</p>
-                <div className='social-media-links'>
+                <div className='HomePage-social-media-links'>
                     <a href="https://github.com/SheaDuffy13" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faGithub} />
                     </a>
@@ -27,7 +31,8 @@ export function HomePage() {
                 <button onClick={handleContactButtonClick}>Contact Me</button>
             </div>
 
-            <img className='home-hero-img' src={hero} alt='' />
+                <ParticleCanvas />            
+            
         </div>
     )
 }

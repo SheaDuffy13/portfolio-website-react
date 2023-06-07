@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export function ContactPage() {
     const [confirmationMessage, setConfirmationMessage] = useState('');
@@ -23,21 +25,35 @@ export function ContactPage() {
   
     return (
       <div>
-        <h1 className='email-title'>Email Me</h1>
-        <form onSubmit={handleSubmit}>
-        <input type="text" id="name" name="from_name" placeholder="Name" required />
+        <div className='contactPage-email-div'>
+          <h2 className='email-title'>Email Me</h2>
+          <form onSubmit={handleSubmit}>
+            <input type="text" id="name" name="from_name" placeholder="Your Name" required />
 
-        <input type="email" id="email" name="from_email" placeholder="Email" required />
+            <input type="email" id="email" name="from_email" placeholder="Your Email" required />
 
-        <input type="text" id="subject" name="subject" placeholder="Subject" required />
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
 
-        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+            <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
 
-        <button type="submit">Send</button>
-      </form>
-      {confirmationMessage && <p className='confirmation-msg'>{confirmationMessage}</p>}
-                {/* dev  */}
-      {/* <p className='confirmation-msg'>{confirmationMessage}</p> */}
+            <button type="submit">Send</button>
+          </form>
+          {confirmationMessage && <p className='confirmation-msg'>{confirmationMessage}</p>}
+                    {/* dev  */}
+          {/* <p className='confirmation-msg'>{confirmationMessage}</p> */}
+        </div>
+
+        <div className='contactPage-socials-div'>
+          <h3 className='contactPage-socials-title'>Connect on social media:</h3>
+          <p>GitHub:</p>
+          <a href="https://github.com/SheaDuffy13" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <p>LinkedIn:</p>
+          <a href="https://linkedin.com/in/shea-d-77979632/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </div>
       </div>
     );
   }
