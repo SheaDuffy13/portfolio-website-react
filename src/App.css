@@ -54,7 +54,7 @@ body {
 }
 
 
- /* ---HOME PAGE--- */
+ /* ---HOME PAGE---------------------------------------------------------------------------------------------------- */
  .homePage-div {
   display:flex;
   /* display:inline-flex; */
@@ -72,7 +72,10 @@ body {
   margin-top: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #61dafbd3;
+  /* background-image: linear-gradient(to right, #f49076, #5750b4); */
+  /* background-image: linear-gradient(to right, #4dadc7d3, #7d69d6); */
+  background-image: linear-gradient(to right, #4dadc7d3, #464589d3);
+  /* background-color: #61dafbd3; */
   color: #282c34;
   cursor: pointer;
   font-size: 16px;
@@ -96,30 +99,25 @@ canvas {
 }
 
 
- /* ---ABOUT ME PAGE--- */
+ /* ---ABOUT ME PAGE---------------------------------------------------------------------------------------------------- */
 
  .AboutMe-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 130px 300px;
+  margin: 130px 300px 50px 300px;
   color: rgb(202, 209, 215);
-
   /* border-bottom: #111216a6 2px solid; */
 }
 
+/* ----------------------- */
 .AboutMe-hero-img{
   width: 300px;
   margin: 20px 0 30px 0;
   border-radius: 10%;
-  /* opacity: 0.8; */
   /* box-shadow: 0 0px 50px 5px black; */
-  /* box-shadow: 10px 10px 0 5px black; */
-
-  /* outline: 1px solid black; */
   outline-offset: 10px;
  }
-
  /* img drop border */
  .AboutMe-hero-div {
   position: relative;
@@ -137,6 +135,7 @@ canvas {
   /* transform: skew(10deg); */
 }
 
+/* ----------------------- */
  .AboutMe-blurb-div{
   text-align: left;
   width: 70%;
@@ -171,29 +170,61 @@ canvas {
   background-image: linear-gradient(to right, #f49076, #5750b4);
 }
 
- .tech-stack {
+/* ----------------------- */
+.aboutMe-techStack-div {
+  width: 50%;
+  margin: 0 auto;
+}
+.aboutMe-techStack-title {
+  margin-bottom: 10px;
+  color: #ffffff85;
+}
+.aboutMe-techStack-div ul {
+  list-style: none;
+  column-count: 4;
+  background-color: #181b1d39;
+  color: #88c7f785;
+  padding: 10px;
+  font-size: 22px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+.aboutMe-techStack-div li {
+  padding: 3px 0;
+  margin: 0 0 20px 0;
+  /* flex-basis: 250px; */
+}
+.tech-icon {
+  width: 24px;
+}
+
+/* ----------------------- */
+ .aboutMe-education-sideBar {
   position: absolute;
-  margin-right: 15px;
-  padding: 20px;
-  /* width: 10vw; */
+  margin-right: 5px;
+  padding: 20px 0;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
   background-color: #181b1d69;
+  color: #88c7f785;
+  font-size: 17px;
+  max-width: 10vw;
+  /* height: 40vh; */
 }
-.tech-stack ul {
-  list-style: none;
-  padding: 0;
+.aboutMe-education p{
+  margin: 20px;
 }
-.tech-stack li {
-  margin-bottom: 10px;
-}
-.tech-stack h3 {
-  margin-bottom: 25px;
+.aboutMe-education span {
+  display: block;
+  font-style: italic;
+  color: #ffffff85;
+  margin-bottom: 2px;
 }
 
 
- /* ---CONTACT ME PAGE--- */
+
+ /* ---CONTACT ME PAGE---------------------------------------------------------------------------------------------------- */
  form {
   display: flex;
   flex-direction: column;
@@ -240,15 +271,12 @@ form button {
 .contactPage-socials-div {
   margin-top: 3%;
 }
-
 .contactPage-socials-title {
   margin-bottom: 2%;
 }
-
 .contactPage-socials-div p {
   margin-top: 1%;
 }
-
 .contactPage-socials-div a {
   color:#61dafb;
 }
@@ -256,7 +284,7 @@ form button {
   opacity: 50%;
 }
 
- /* ---PROJECT PAGE--- */
+ /* ---PROJECT PAGE---------------------------------------------------------------------------------------------------- */
 
 .project-list {
   /* display: flex; */
@@ -281,29 +309,23 @@ form button {
  }
 
 
- /* ---FOOTER--- */
+ /* ---FOOTER---------------------------------------------------------------------------------------------------- */
  
 .social-media-links {
   position: fixed;
   top: 50%;
   left: 0;
-  /* transform: translateY(-50%); */
-  transform: translateY(60%);
+  /* margin-left: 15px; */
+  transform: translateY(-50%);    /*mid position*/
+  /* transform: translateY(60%); */  /*bottom position*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 3vh;
-  background-color: #11111121;
-  height: 30vh;
+  /* background-color: #11111121; */
+  background-image: linear-gradient(to bottom, transparent, #1111118b, transparent);
+  height: 60vh;
 }
-/* .social-media-links::before {
-  content: '';
-  position: absolute;
-  top: 290px;
-  bottom: 10px;
-  left: 20px;
-  border-left: 2px solid #61dafb67;
-} */
 
 .social-media-links a {
   color:#61dafb;
