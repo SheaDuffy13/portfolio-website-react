@@ -1,4 +1,3 @@
-// import React from "react";
 import { useNavigate } from "react-router-dom";
 import hero from '../images/hero.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -34,11 +33,12 @@ export function AboutPage() {
                     <p className="AboutMe-blurb">
                         Hi, I'm Shea! I'm a web development student at Coder Academy with a passion for all things tech. 
                         I've always been interested in computers and previously studied game development in 2013. 
-                        Currently, I work in retail but am excited to transition into the tech industry and apply my skills to build amazing web experiences.
-                        
-                        {/* <p>
-                        When I'm not coding, you can find me playing Magic: The Gathering, video games, books, puzzles or chasing possums away from my parsley. All while drinking ungodly amounts of tea.
-                        </p> */}
+                        Currently, I work in retail but am excited to transition into the tech industry and apply my 
+                        skills to build amazing web experiences. <br />
+                        <br />
+                        When I'm not coding, you can find me playing Magic: The Gathering, video games, books, 
+                        puzzles or chasing possums away from my parsley. All while drinking copious amounts of tea.
+
                     </p>
 
                     <div className="aboutMe-blurb-btns-div">
@@ -54,32 +54,38 @@ export function AboutPage() {
             </div>
 
             <div className="aboutMe-techStack-div">
-                    <h3 className="aboutMe-techStack-title">Tech Skills</h3>
-                    <ul>
-                        <FontAwesomeIcon icon={faPython} />
-                        <li>Python</li>
-                        <FontAwesomeIcon icon={faHtml5} />
-                        <li>HTML</li>
-                        {/* <FontAwesomeIcon icon={faCss3} style={{color: '#0277BD'}}/> */}
-                        <FontAwesomeIcon icon={faCss3}/>
-                        <li>CSS</li>
-                        {/* <FontAwesomeIcon icon={faJsSquare} style={{color: '#FFD600'}} /> */}
-                        <FontAwesomeIcon icon={faJsSquare} />
-                        <li>JavaScript</li>
-                        <img className="tech-icon" src={expressImg} alt="Express" />
-                        <li>Express</li>
-                        <img className="tech-icon" src={mongodbImg} alt="Express" />
-                        <li>MongoDB</li>
-                        <img className="tech-icon" src={postgresqlImg} alt="Express" />
-                        <li>PostgreSQL</li>
-                        <FontAwesomeIcon icon={faReact} />
-                        <li>React</li>
-                    </ul>
-                </div>
+                <h3 className="aboutMe-techStack-title">Tech Skills</h3>
+                <ul>
+                <FontAwesomeIcon icon={faHtml5} />
+                    <li>HTML</li>
+                    {/* <FontAwesomeIcon icon={faCss3} style={{color: '#0277BD'}}/> */}
+                    <FontAwesomeIcon icon={faCss3}/>
+                    <li>CSS</li>
+                    {/* <FontAwesomeIcon icon={faJsSquare} style={{color: '#FFD600'}} /> */}
+                    <FontAwesomeIcon icon={faJsSquare} />
+                    <li>JavaScript</li>
+                    <FontAwesomeIcon icon={faReact} />
+                    <li>React</li>
+                    <FontAwesomeIcon icon={faPython} />
+                    <li>Python</li>
+                    <img className="tech-icon" src={expressImg} alt="Express" />
+                    <li>Express</li>
+                    <img className="tech-icon" src={mongodbImg} alt="Express" />
+                    <li>MongoDB</li>
+                    <img className="tech-icon" src={postgresqlImg} alt="Express" />
+                    <li>PostgreSQL</li>
+                </ul>
+            </div>
 
-            <div class="aboutMe-education-sideBar">
+            {/* <div className="aboutMe-hobbies-div">
+                <p className="aboutMe-hobbies-p">
+                    When I'm not coding, you can find me playing Magic: The Gathering, video games, books, 
+                    puzzles or chasing possums away from my parsley. All while drinking ungodly amounts of tea.
+                </p>
+            </div> */}
+
+            {/* <div class="aboutMe-education-sideBar">
                 <h3>Education</h3>
-
                 <div className="aboutMe-education">
                     <p>
                         <span>2022-current</span> Diploma of Information Technology
@@ -88,8 +94,7 @@ export function AboutPage() {
                         <span>2014</span> Diploma of Interactive Media (games)
                     </p>
                 </div>
-
-            </div>
+            </div> */}
 
         </div>
     )

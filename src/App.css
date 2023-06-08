@@ -105,8 +105,8 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 130px 300px 50px 300px;
-  color: rgb(202, 209, 215);
+  margin: 100px 300px 50px 300px;
+  color: #cad1d7;
   /* border-bottom: #111216a6 2px solid; */
 }
 
@@ -147,6 +147,13 @@ canvas {
  .AboutMe-title {
   margin-bottom: 20px;
  }
+ /* delete? */
+ .aboutMe-hobbies-p {
+  font-size: calc(10px + 0.7vmin);
+  margin-top: 10px;
+  color: #a4d4fa85;
+  font-style: italic;
+ }
 
  .aboutMe-blurb-btns-div {
   display: flex;
@@ -174,6 +181,7 @@ canvas {
 .aboutMe-techStack-div {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 7vh;
 }
 .aboutMe-techStack-title {
   margin-bottom: 10px;
@@ -196,6 +204,19 @@ canvas {
 }
 .tech-icon {
   width: 24px;
+}
+
+/* ----------------------- */
+.aboutMe-hobbies-div {
+  width: 35vw;
+  height: 35vh;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #181b1d39;
+  /* color: #88c7f785; */
+
 }
 
 /* ----------------------- */
@@ -286,26 +307,42 @@ form button {
 
  /* ---PROJECT PAGE---------------------------------------------------------------------------------------------------- */
 
+ #projectsPage-div {
+  /* color: #cad1d7; */
+  color: #ffffff85;
+
+ }
+ #projectsPage-title{
+  margin-top: 30px;
+  color: #88c7f785;
+  
+ }
 .project-list {
-  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  display: inline-block;
+  /* display: inline-block; */
   margin: 20px;
 }
 
  .project-entry{
-  background-color:#11111144;
-  width: 50vw;
-  margin: 20px;
+    background-color:#11111144;
+    width: 30vw;
+    min-width: 300px;
+    margin: 20px;
  }
-
- .project-entry p, h4 {
-  margin: 20px;
-  padding: 10px;
+ .project-entry h4 {
+  margin: 10px;
+  color: #88c7f785;
+ }
+ .project-entry p {
+    margin: 8px;
+    padding: 8px 5% 10px 5%;
  }
 
  .project-entry img {
-  width: 30vw;
+    width: 25vw;
+    min-width: 230px;
  }
 
 
