@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import logo from '../images/logo.png'
 import logoBlue from '../images/logo-blue.png'
 
 export function Header(props){
@@ -12,7 +11,7 @@ export function Header(props){
         <header>
             <nav className="NavBar">
             <NavLink to="/">
-                <img className="header-logo" src={logoBlue} />
+                <img className="header-logo" src={logoBlue} alt="" />
             </NavLink>
             <ul>
                 <li>

@@ -56,7 +56,7 @@ export function AboutPage() {
             <div className="aboutMe-techStack-div">
                 <h3 className="aboutMe-techStack-title">Tech Skills</h3>
                 <ul>
-                <FontAwesomeIcon icon={faHtml5} />
+                    <FontAwesomeIcon icon={faHtml5} />
                     <li>HTML</li>
                     {/* <FontAwesomeIcon icon={faCss3} style={{color: '#0277BD'}}/> */}
                     <FontAwesomeIcon icon={faCss3}/>
