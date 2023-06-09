@@ -26,7 +26,7 @@ export function ProjectsPage() {
                 <div className="project-entry">                   
                     <img src={projectImg} alt='' />
                     <h4 >Terminal Game</h4>
-                    <p>Made with Python as a class project</p>
+                    <p>Coded with Python as a class project</p>
                     <div className="project-entry-buttons">
                         <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                             <button>Live Site</button>
