@@ -26,7 +26,7 @@ export function ContactPage() {
     return (
       <div>
         <div className='contactPage-email-div'>
-          <h2 className='email-title'>Email</h2>
+          <h3 className='email-title'>Email</h3>
           <form onSubmit={handleSubmit}>
             <input type="text" id="name" name="from_name" placeholder="Your Name" required />
 

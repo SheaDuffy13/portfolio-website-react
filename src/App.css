@@ -98,6 +98,29 @@ canvas {
   border-radius: 50%;
 }
 
+@media (max-width: 860px) {
+  .homePage-div {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+  }
+
+  .homePage-name-div {
+    margin-bottom: 0;
+  }
+  canvas {
+    width: 80%;
+    height: 50vh;
+    margin-top: 12%;
+    margin-bottom: 20%;
+    /* max-width: 40vw; */
+    /* max-height: 50vh; */
+    opacity: 60%;
+    border-radius: 50%;
+  }
+  
+}
+
 
  /* ---ABOUT ME PAGE---------------------------------------------------------------------------------------------------- */
 
@@ -301,11 +324,7 @@ canvas {
 
 .email-title {
   margin-top: 10vh;
-}
-
-form label {
-  display: block;
-  margin-top: 20px;
+  font-size: 30px; 
 }
 
 form input,
@@ -324,7 +343,7 @@ form button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.5vh;
+  font-size: calc(10px + 0.4vmin); 
   cursor: pointer;
 }
 
@@ -335,10 +354,13 @@ form button {
 }
 
 .contactPage-socials-div {
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-top: 45px;
+  font-size: 25px; 
 }
 .contactPage-socials-title {
   margin-bottom: 2%;
+  margin-bottom: 27px;
 }
 .contactPage-socials-div p {
   margin-top: 1%;
@@ -348,6 +370,17 @@ form button {
 }
 .contactPage-socials-div a:hover {
   opacity: 50%;
+}
+
+@media (max-width: 480px) {
+  form input,
+  form textarea {
+    width: 85%;
+    padding: 10px;
+  }
+  form {
+    align-items: center;
+  }
 }
 
  /* ---PROJECT PAGE---------------------------------------------------------------------------------------------------- */
