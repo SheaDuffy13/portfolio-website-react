@@ -37,7 +37,7 @@ export function AboutPage() {
                         skills to build amazing web experiences. <br />
                         <br />
                         When I'm not coding, you can find me playing Magic: The Gathering, video games, books, 
-                        puzzles or chasing possums away from my parsley. All while drinking copious amounts of tea.
+                        puzzles or sometimes drawing. All while drinking copious amounts of tea.
 
                     </p>
 
