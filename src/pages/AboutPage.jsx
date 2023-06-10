@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import hero from '../images/hero.jpg'
+import hero from '../images/Blank-Profile-Picture.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPython,
@@ -37,7 +37,7 @@ export function AboutPage() {
                         skills to build amazing web experiences. <br />
                         <br />
                         When I'm not coding, you can find me playing Magic: The Gathering, video games, books, 
-                        puzzles or sometimes drawing. All while drinking copious amounts of tea.
+                        puzzles or drinking copious amounts of tea.
 
                     </p>
 
