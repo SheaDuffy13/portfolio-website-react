@@ -14,11 +14,9 @@ export function ContactPage() {
         emailjs.sendForm('service_hnu743m', 'template_28amgik', event.target, 'GZsC3Vb34Y5LFogOV')
         .then((result) => {
             console.log(result.text);
-            // alert('Your message has been sent successfully!');
             setConfirmationMessage('Your message has been sent successfully!');
         }, (error) => {
             console.log(error.text);
-            // alert('Something went wrong');
             setConfirmationMessage('Something went wrong');
         });
     };

@@ -11,6 +11,7 @@ import {
 import expressImg from '../images/icon-express.png'
 import mongodbImg from '../images/icon-mongodb-blue.png'
 import postgresqlImg from '../images/icon-postgresql.png'
+import resumePDF from "../images/SheaDuffy_Resume_WebDev.pdf";
 
 
 export function AboutPage() {
@@ -45,7 +46,7 @@ export function AboutPage() {
                     <button className="aboutMe-contact-btn" onClick={handleButtonClickContact}>
                             Contact Me
                         </button>
-                        <button className="aboutMe-resume-btn" href="<URL>" target="_blank"> {/* TODO - PDF LINK */}
+                        <button className="aboutMe-resume-btn" onClick={() => window.open(resumePDF, "_blank")}>
                             Resume
                         </button>
                     </div>
@@ -58,10 +59,8 @@ export function AboutPage() {
                 <ul>
                     <FontAwesomeIcon icon={faHtml5} />
                     <li>HTML</li>
-                    {/* <FontAwesomeIcon icon={faCss3} style={{color: '#0277BD'}}/> */}
                     <FontAwesomeIcon icon={faCss3}/>
                     <li>CSS</li>
-                    {/* <FontAwesomeIcon icon={faJsSquare} style={{color: '#FFD600'}} /> */}
                     <FontAwesomeIcon icon={faJsSquare} />
                     <li>JavaScript</li>
                     <FontAwesomeIcon icon={faReact} />
@@ -76,25 +75,6 @@ export function AboutPage() {
                     <li>PostgreSQL</li>
                 </ul>
             </div>
-
-            {/* <div className="aboutMe-hobbies-div">
-                <p className="aboutMe-hobbies-p">
-                    When I'm not coding, you can find me playing Magic: The Gathering, video games, books, 
-                    puzzles or chasing possums away from my parsley. All while drinking ungodly amounts of tea.
-                </p>
-            </div> */}
-
-            {/* <div class="aboutMe-education-sideBar">
-                <h3>Education</h3>
-                <div className="aboutMe-education">
-                    <p>
-                        <span>2022-current</span> Diploma of Information Technology
-                    </p>
-                    <p>
-                        <span>2014</span> Diploma of Interactive Media (games)
-                    </p>
-                </div>
-            </div> */}
 
         </div>
     )

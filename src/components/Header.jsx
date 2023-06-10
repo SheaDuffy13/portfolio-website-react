@@ -24,11 +24,6 @@ export function Header(props){
                         About
                     </NavLink>
                 </li>
-                {/* <li>
-                    <NavLink to="/about/contact" style={({isActive}) => isActive ? activeNavStyle : undefined}>
-                        Contact
-                    </NavLink>
-                </li> */}
                 <li>
                     <NavLink to="/projects" end style={({isActive}) => isActive ? activeNavStyle : undefined}>
                         Projects
@@ -36,10 +31,7 @@ export function Header(props){
                 </li>
             </ul>
         </nav>
-        {/* <div className="header-name-div">
-            <h1>Shea Duffy</h1>
-            <p>Aspiring Web Developer</p>
-        </div> */}
+
         </header>
        
     )

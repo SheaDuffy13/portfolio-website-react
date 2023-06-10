@@ -1,13 +1,5 @@
 
 .NavBar {
-  /* dark bar */
-    /* background-color: #181b1d4e; */
-    /* background-image: url(./images/leaves.jpg); */
-    /* background-size: cover; */
-    /* background-position: left; */
-    /* opacity: 30%; */
-    /* overflow: hidden; */
-    /* or */
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -18,10 +10,8 @@
   .NavBar ul {
     list-style-type: none;
     margin: 0 20px;
-    /* padding: 0; */
     display: flex;
     justify-content: space-between;
-    /* width: 20vw; */
     width: 300px;
   }
   
@@ -32,11 +22,9 @@
   .NavBar li a {
     display: block;
     color: #61dafb;
-    /* text-align: center; */
     padding: 14px 21px;
     text-decoration: none;
     font-size: calc(10px + 1.1vmin); 
-    /* font-size: 20px; */
   }
   
   .NavBar ul a:hover {
@@ -47,29 +35,11 @@
     width: 50px;
     height: auto;
     margin-left: 15px;
-    /* padding: 0; */
     opacity: 70%;
   }
   .header-logo:hover {
     opacity: 0.5;
   }
-  
-  .header-name-div {
-    /* background-color: #181b1d; */
-    /* background-image: url(./images/stars.jpg); */
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* background-blend-mode:color-dodge; */
-    /* width: 100vw; */
-    /* margin: 5px; */
-    /* padding-bottom: 8px; */
-  }
-
-  .header-name-div p {
-    /* background-color: #1f304889; */
-  }
-
-
 
   @media (max-width: 600px) {
     header {

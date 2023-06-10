@@ -22,12 +22,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   font-size: calc(10px + 1.5vmin);
   color: white;
-
-    /* background-color: rgb(41 37 36/var(--tw-bg-opacity));
-  --tw-bg-opacity: 1; */
 }
 
 /* div in index.html */
@@ -35,7 +31,6 @@ body {
     height: fit-content;
     z-index: -1;
     width: 100%;
-    /* max-width: 640px; */
     max-width: 800px;
     background-image: 
         radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
@@ -50,14 +45,12 @@ body {
     filter: blur(100px) saturate(150%);
     top: 80px;
     opacity: 0.1;
-    /* margin: 5vw 50vw 5vw 5vw; */
 }
 
 
  /* ---HOME PAGE---------------------------------------------------------------------------------------------------- */
  .homePage-div {
   display:flex;
-  /* display:inline-flex; */
   justify-content:space-around;
   align-items: center;
   margin-top: 20vh;
@@ -72,10 +65,7 @@ body {
   margin-top: 10px;
   border: none;
   border-radius: 5px;
-  /* background-image: linear-gradient(to right, #f49076, #5750b4); */
-  /* background-image: linear-gradient(to right, #4dadc7d3, #7d69d6); */
   background-image: linear-gradient(to right, #4dadc7d3, #464589d3);
-  /* background-color: #61dafbd3; */
   color: #282c34;
   cursor: pointer;
   font-size: 16px;
@@ -113,8 +103,6 @@ canvas {
     height: 50vh;
     margin-top: 12%;
     margin-bottom: 20%;
-    /* max-width: 40vw; */
-    /* max-height: 50vh; */
     opacity: 60%;
     border-radius: 50%;
   }
@@ -129,18 +117,14 @@ canvas {
   justify-content: center;
   align-items: center;
   margin: 10vh 15.6vw 1vh 15.6vw;
-  /* margin: 100px 300px 50px 300px; */
   color: #cad1d7;
-  /* border-bottom: #111216a6 2px solid; */
 }
 
 /* ----------------------- */
 .AboutMe-hero-img{
-  /* width: 15.6vw; */
   width: 300px;
   margin: 20px 0 30px 0;
   border-radius: 10%;
-  /* box-shadow: 0 0px 50px 5px black; */
   outline-offset: 10px;
  }
  /* img drop border */
@@ -157,14 +141,12 @@ canvas {
   left: 30px;
   z-index: -1;
   border: 10px solid rgba(69, 93, 114, 0.54);
-  /* transform: skew(10deg); */
 }
 
 /* ----------------------- */
  .AboutMe-blurb-div{
   text-align: left;
   width: 70%;
-  /* margin: 5.5%; */
   margin: 50px;
  }
  .AboutMe-blurb {
@@ -172,13 +154,6 @@ canvas {
  }
  .AboutMe-title {
   margin-bottom: 20px;
- }
- /* delete? */
- .aboutMe-hobbies-p {
-  font-size: calc(10px + 0.7vmin);
-  margin-top: 10px;
-  color: #a4d4fa85;
-  font-style: italic;
  }
 
  .aboutMe-blurb-btns-div {
@@ -232,43 +207,6 @@ canvas {
 }
 
 /* ----------------------- */
-.aboutMe-hobbies-div {
-  width: 35vw;
-  height: 35vh;
-  margin: 0 auto;
-  margin-bottom: 2vh;
-  border-radius: 50%;
-  padding: 10px;
-  background-color: #181b1d39;
-  /* color: #88c7f785; */
-
-}
-
-/* ----------------------- */
- .aboutMe-education-sideBar {
-  position: absolute;
-  margin-right: 5px;
-  padding: 20px 0;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  background-color: #181b1d69;
-  color: #88c7f785;
-  font-size: 17px;
-  max-width: 10vw;
-  /* height: 40vh; */
-}
-.aboutMe-education p{
-  margin: 20px;
-}
-.aboutMe-education span {
-  display: block;
-  font-style: italic;
-  color: #ffffff85;
-  margin-bottom: 2px;
-}
-
-/* ----------------------- */
 @media (max-width: 1350px) {
   .aboutMe-techStack-div ul {
     column-count: 3;
@@ -296,11 +234,8 @@ canvas {
 @media (max-width: 430px) {
   .aboutMe-blurb-btns-div button {
     padding: 4% 14%;
-    /* padding: 15px 40px; */
     font-size: calc(10px + 1vmin); 
-    /* font-size: 14px; */
     margin: 10% 0.8%;
-    /* margin: 30px 3px; */
    }
    .aboutMe-techStack-div {
     width: 70%
@@ -309,8 +244,6 @@ canvas {
     margin: 7vh 0vw 1vh 0;
   }
 }
-
-
 
 
  /* ---CONTACT ME PAGE---------------------------------------------------------------------------------------------------- */
@@ -336,7 +269,7 @@ form textarea {
 }
 
 form button {
-  background-color: #111111a2; /*or #181b1d */
+  background-color: #111111a2;
   border: none;
   color: white;
   padding: 13px 25px;
@@ -386,7 +319,6 @@ form button {
  /* ---PROJECT PAGE---------------------------------------------------------------------------------------------------- */
 
  #projectsPage-div {
-  /* color: #cad1d7; */
   color: #ffffff85;
   display: flex;
   flex-direction: column;
@@ -453,7 +385,7 @@ form button {
 
 }
 @media (max-width: 430px) {
-  /* stuff in here might be redundent */
+  /* might be redundent */
   #projectsPage-div {
     display: flex;
     flex-direction: column;
@@ -477,13 +409,11 @@ form button {
   position: fixed;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);    /*mid position*/
-  /* transform: translateY(60%);*/  /*lower position */
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 3vh;
-  /* background-color: #11111121; */
   background-image: linear-gradient(to bottom, transparent, #1111118b, transparent);
   height: 60vh;
 }

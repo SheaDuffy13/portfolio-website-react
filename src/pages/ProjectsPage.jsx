@@ -17,7 +17,7 @@ export function ProjectsPage() {
                     <h4 >Terminal Game</h4>
                     <p>A text-based adventure game, coded with Python.</p>
                     <div className="project-entry-buttons">
-                        {/* <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+                        {/* <a href="" target="_blank" rel="noreferrer">
                             <button>Live Site</button>
                         </a> */}
                         <a href="https://github.com/SheaDuffy13/SheaDuffy_T1A3_Terminal-App" target="_blank" rel="noreferrer">
