@@ -13,9 +13,10 @@ function ParticleCanvas() {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: Math.random() * 2 - 1,
-        vy: Math.random() * 2 - 1,
-        // size: Math.random() * 3 + 1
+        // vx: Math.random() * 2 - 1,
+        // vy: Math.random() * 2 - 1,
+        vy: Math.random() - 0.5,
+        vx: Math.random() - 0.5,
         size: Math.random() + 0.2,
       });
     }

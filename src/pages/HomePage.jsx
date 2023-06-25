@@ -15,7 +15,6 @@ export function HomePage() {
     return(
         <div className='homePage-div'>
             <div className='homePage-name-div'>
-                {/* <img className='home-hero-img' src={hero} alt='' /> */}
                 <h1>Shea Duffy</h1>
                 <p>Aspiring Web Developer</p>
                 <div className='HomePage-social-media-links'>

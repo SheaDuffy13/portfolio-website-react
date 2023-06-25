@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logoBlue from '../images/SD-logo-2.png'
+import logoBlue from '../images/SD-logo-3.png'
 
 export function Header(props){
 

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import hero from '../images/Blank-Profile-Picture.jpg'
+// import hero from '../images/Blank-Profile-Picture.jpg'
+import hero from '../images/herob&w.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPython,
@@ -32,13 +33,13 @@ export function AboutPage() {
                 <div className="AboutMe-blurb-div">
                     <h2 className="AboutMe-title">About Me</h2>
                     <p className="AboutMe-blurb">
-                        Hi, I'm Shea! I'm a web development student at Coder Academy with a passion for all things tech. 
-                        I've always been interested in computers and previously studied game development in 2013. 
-                        Currently, I work in retail but am excited to transition into the tech industry and apply my 
+                        Hi, I'm Shea. I'm a web development student at Coder Academy with a passion for all things tech. 
+                        I've always wanted to work in IT and previously studied game development in 2013. 
+                        Currently, I work in retail but am excited to finally transition into the tech industry and apply my 
                         skills to build amazing web experiences. <br />
                         <br />
-                        When I'm not coding, you can find me playing Magic: The Gathering, video games, books, 
-                        puzzles or drinking copious amounts of tea.
+                        When I'm not coding, you can find me reading, playing video games, dabbling in Magic: The Gathering or 
+                        attempting to grow plants.
 
                     </p>
 

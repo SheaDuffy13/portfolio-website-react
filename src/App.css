@@ -339,7 +339,7 @@ form button {
 
  .project-entry{
     background-color:#11111144;
-    width: 30vw;
+    width: 20vw;
     min-width: 300px;
     margin: 20px;
     display: flex;
@@ -354,7 +354,7 @@ form button {
     padding: 8px 5% 10px 5%;
  }
  .project-entry img {
-    width: 30vw;
+    width: 20vw;
     min-width: 300px;
  }
 
