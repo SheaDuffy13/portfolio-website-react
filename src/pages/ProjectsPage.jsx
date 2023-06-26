@@ -29,7 +29,7 @@ export function ProjectsPage() {
                 <div className="project-entry">                   
                     <img src={projectImg} alt='' />
                     <h4 >API Bookstore Database</h4>
-                    <p>Flask, sqlalchemy, marshmallow</p>
+                    <p>Created with Python, Flask, PostgreSQL, SQLAlchemy, Marshmallow</p>
                     <div className="project-entry-buttons">
                         {/* <a href="HREF" target="_blank" rel="noreferrer">
                             <button>Live Site</button>
