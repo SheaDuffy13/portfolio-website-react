@@ -45,7 +45,7 @@ export function ProjectsPage() {
                     <h4 >Note Taking App</h4>
                     <p>React app focused on using hooks and context</p>
                     <div className="project-entry-buttons">
-                        <a href="sd-notetaker.netlify.app" target="_blank" rel="noreferrer">
+                        <a href="https://sd-notetaker.netlify.app" target="_blank" rel="noreferrer">
                             <button>Live Site</button>
                         </a>
                         <a href="https://github.com/SheaDuffy13/note-taker" target="_blank" rel="noreferrer">
